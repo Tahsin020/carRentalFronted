@@ -1,0 +1,76 @@
+<div class="content">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header"><h5 class="title">Ürün Ekle</h5></div>
+        <div class="card-body">
+          <form [formGroup]="rentalAddForm">
+            <div class="mb-3">
+              <label for="brandName">Marka Adı</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="brandName"
+                  formControlName="brandName"
+                  class="form-control"
+                  placeholder="Marka Adı"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="colorName">Renk</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="colorName"
+                  formControlName="colorName"
+                  class="form-control"
+                  placeholder="Renk"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+                <label for="carName">Araç Adı</label>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="carName"
+                    formControlName="carName"
+                    class="form-control"
+                    placeholder="Araç Adı"
+                  />
+                </div>
+              </div>
+            <div class="mb-3">
+                <label for="dailyPrice">Kiralama Ücreti</label>
+                <div class="form-group">
+                  <input
+                    type="number"
+                    id="dailyPrice"
+                    formControlName="dailyPrice"
+                    class="form-control"
+                    placeholder="Kiralama Ücreti"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="rentDate">Tarih</label>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="rentDate"
+                    formControlName="rentDate"
+                    class="form-control"
+                    placeholder="Tarih"
+                  />
+                </div>
+              </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-fili btn-primary" (click)="add()">Ekle</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
